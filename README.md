@@ -108,14 +108,15 @@
 
 ## النشر على GitHub Pages
 
-ملف `deploy-pages.yml` يرفع محتوى المستودع كما هو إلى GitHub Pages عند كل push إلى `main`.
+ملف `deploy-pages.yml` يرفع محتوى المستودع كما هو إلى GitHub Pages عند كل push إلى `main`. يحتاج المستودع إلى تفعيل Pages مرة واحدة من إعدادات GitHub قبل أول نشر.
 
 لأول مرة فقط، من إعدادات المستودع:
 
 1. افتح **Settings → Actions → General** وتأكد من السماح بتشغيل GitHub Actions.
 2. افتح **Settings → Pages**.
-3. اختر **GitHub Actions** كمصدر النشر، إذا لم يتم اختياره تلقائيًا.
-4. انتظر انتهاء Workflow باسم **Deploy to GitHub Pages**.
+3. من **Build and deployment → Source** اختر **GitHub Actions** ثم احفظ.
+4. أعد تشغيل Workflow باسم **Deploy to GitHub Pages** من تبويب **Actions**، أو ادفع أي commit جديد إلى `main`.
+5. انتظر انتهاء Workflow ثم افتح رابط الموقع المنشور.
 
 ## المساهمة
 
